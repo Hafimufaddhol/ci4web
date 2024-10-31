@@ -1,0 +1,24 @@
+CRITICAL - 2024-10-24 06:26:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "BlogView.php"
+[Method: GET, Route: blog]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('BlogView.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('BlogView', [], true)
+ 3 APPPATH\Controllers\Blog.php(8): view('BlogView')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Blog->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-10-24 07:07:08 --> ErrorException: A non-numeric value encountered
+[Method: GET, Route: belajar/bagi/2/5d]
+in APPPATH\Controllers\Belajar.php on line 14.
+ 1 APPPATH\Controllers\Belajar.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\laragon\\www\\ci4web\\app\\Controllers\\Belajar.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Belajar->bagi('2', '5d')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Belajar))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\ci4web\\public\\index.php')
