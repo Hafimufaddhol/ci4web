@@ -25,8 +25,10 @@ $routes->group('belajarlibrary',static function ($routes){
     // $routes->get('logout','BelajarLibrary::logout');
 
 });
+$routes->get('/mahasiswa','Mahasiswa::show');
 
 
 
 
-$routes->setAutoRoute(false);
+
+$routes->setAutoRoute(true);
